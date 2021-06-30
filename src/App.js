@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import LightBulb from "./LightBulb1";
+// import List from "./List6";
+
+import "./App.css";
+
+const persons = [
+  { name: "Bert", mood: "Grumpy" },
+  { name: "Ernie", mood: "Happy" }
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <List persons={persons} /> */}
+      <LightBulb />
     </div>
   );
 }
